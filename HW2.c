@@ -161,7 +161,7 @@ void menu_handler(int choice) // 메뉴 선택에 따른 실질적 기능 구현
 				printf("힙에 입력될 원소의 개수를 입력하세요 : ");
 				add_elements = integer_check();
 				if (heap.heapsize + add_elements >= MAX_ELEMENT)
-					printf("힙에 199개 이상의 원소를 추가할 수 없습니다. 다시 입력하세요\n");
+					printf("힙에 200개 이상의 원소를 추가할 수 없습니다. 다시 입력하세요\n");
 			} while (heap.heapsize + add_elements >= MAX_ELEMENT); // 199개가 넘어가면 절대로 작동하지 않음. 따라서 현재 199개의 원소가 저장되어 있을 때 이 메뉴로 접근했다면 추가할 원소의 개수를 0을 입력해야만 넘어가짐.
 
 			int input;
